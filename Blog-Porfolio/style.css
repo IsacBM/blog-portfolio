@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    font-family: "Nunito Sans", sans-serif;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(14,14,15,1) 14%, rgba(26,26,29,1) 39%, rgba(33,34,37,1) 61%, rgba(39,40,45,1) 84%, rgba(43,44,50,1) 100%);;
+    color: white;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header{
+    border-bottom: 2px solid rgb(59, 59, 59);
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.cabecalho{
+    justify-content: space-around;
+}
+
+.cabecalho, .lado-direito, .lado-esquerdo{
+    display: flex;
+    align-items: center;
+}
+.lado-esquerdo a{
+    text-decoration: none;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+.centro{
+    display: flex;
+    gap: 4.5rem;
+    font-size: 18px;
+}
+.centro a{
+    text-decoration: none;
+    color: rgb(255, 81, 0);
+    font-weight: bold;
+}
+#laranja{
+    color: rgb(255, 81, 0);
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    margin-top: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-top: solid 2px rgb(59, 59, 59);
+}
+
+.bandeira img{
+    width: 32px;
+}
+
+.final{
+    font-weight: bold;
+}
+
+.ano{
+    color: rgb(255, 81, 0);
+    text-shadow: 0px 0px 10px rgb(255, 81, 0);
+}
+
+.redes {
+    position: fixed;
+    left: 0; /* Cola no canto esquerdo */
+    top: 50%; /* Posiciona no meio da tela */
+    transform: translateY(-50%); /* Ajusta para centralizar corretamente */
+    background-color: rgb(255, 81, 0);
+    padding: 40px 12px;
+    border-radius: 0 20px 20px 0; /* Bordas arredondadas no lado direito */
+    display: flex;
+    color: white;
+    flex-direction: column; /* Ícones um abaixo do outro */
+    gap: 20px; /* Espaçamento entre os ícones */
+}
+
+.redes a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.principal{
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    margin-top: 10px;
+    /* margin-top: 10px;
+    margin-left: 20px; */
+}
+.perfil{
+    min-height: calc(100vh - 136px); /* 100% da tela menos o tamanho do footer */
+    
+    margin-left: 50px;
+    border: solid 2px rgb(59, 59, 59);
+    border-radius: 20px;
+    padding: 10px;
+    width: 750px;
+    
+}
+
+.perfil .imagem, .infos, .botao{
+    text-align: center;
+}
+
+.perfil .imagem img{
+    width: 200px;
+    border-radius: 50%;
+    border: solid 4px rgb(255, 81, 0);
+}
+
+.perfil .infos{
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil .nome{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.curso{
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+.botao{
+    margin: 20px 0px;
+}
+
+.botao a{
+    background-color: #ff5100;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.infos{
+    margin-top: 8px;
+    
+}
+
+.bio{
+    margin-right: 10px;
+    border: solid 2px rgb(59, 59, 59);
+    border-radius: 20px;
+}
+
+.dados .bio p{
+    margin: 0px;
+    text-indent: 20px;
+    
+}
+
+.conteudo{
+    border-left: solid 2px #ff5100;
+    border-radius: 20px;
+}
+
+.bio .title{
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    text-decoration: underline rgb(255, 81, 0) 4px;
+}
+
+.bio .texto{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+.bio-infos{
+    margin-top: 10px;
+    min-height: calc(100vh - 424px);
+    display: flex;
+    justify-content: center;
+}
+
+.grafico-github{
+    width: 100%; /* Ajusta a largura automaticamente */
+    max-width:670px; /* Define um tamanho máximo */
+    height: 215px; /* Ajuste para cortar parte da imagem */
+    overflow: hidden; /* Esconde o que passar dessa altura */
+}
+
+.grafico-github img{
+    object-fit: cover; /* Faz a imagem cobrir a área definida */
+    object-position: 0px -10px; /* Move a imagem para cima (Ajuste o valor para cortar mais ou menos) */
+    width: 100%; /* Garante que a imagem encaixa na div */
+}
+
