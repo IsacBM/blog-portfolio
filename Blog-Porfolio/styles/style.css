@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    font-family: "Nunito Sans", sans-serif;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(14,14,15,1) 14%, rgba(26,26,29,1) 39%, rgba(33,34,37,1) 61%, rgba(39,40,45,1) 84%, rgba(43,44,50,1) 100%);
+    color: white;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header{
+    border-bottom: 2px solid rgb(59, 59, 59);
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.cabecalho{
+    justify-content: space-around;
+}
+
+.cabecalho, .lado-direito, .lado-esquerdo{
+    display: flex;
+    align-items: center;
+}
+.lado-esquerdo a{
+    text-decoration: none;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+.centro{
+    display: flex;
+    gap: 4.5rem;
+    font-size: 18px;
+}
+.centro a{
+    text-decoration: none;
+    color: #ff5100;
+    font-weight: bold;
+}
+#laranja{
+    color: #ff5100;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    margin-top: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-top: solid 2px rgb(59, 59, 59);
+}
+
+.bandeira img{
+    width: 32px;
+}
+
+.final{
+    font-weight: bold;
+}
+
+.ano{
+    color: #ff5100;
+    text-shadow: 0px 0px 10px #ff5100;
+}
+
+.redes {
+    position: fixed;
+    left: 0; 
+    top: 50%;
+    transform: translateY(-50%); 
+    background-color: #ff5100;
+    padding: 40px 12px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.redes a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.principal{
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    margin-top: 10px;
+    /*margin-left: 20px; */
+}
+.perfil{
+    max-width: calc(100vh - 406px);
+    min-height: calc(100vh - 136px);
+    margin-left: 50px;
+    border: solid 2px rgb(59, 59, 59);
+    border-radius: 20px;
+    padding: 10px;
+    width: 750px;
+    
+}
+
+.perfil .imagem, .infos, .botao{
+    text-align: center;
+}
+
+.perfil .imagem img{
+    width: 200px;
+    border-radius: 50%;
+    border: solid 4px #ff5100;
+}
+
+.perfil .infos{
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil .nome{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.curso{
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+.botao{
+    margin: 20px 0px;
+}
+
+.botao a{
+    background-color: #ff5100;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.infos{
+    margin-top: 8px;
+}
+
+.bio{
+    border-left: solid 2px #ff5100;
+    border-radius: 20px;
+}
+
+.bio-dados{
+    border: solid 2px rgb(59, 59, 59);
+}
+
+.bio-text{
+    margin-right: 10px;
+    border: solid 2px rgb(59, 59, 59);
+    border-radius: 20px;
+}
+
+.bio2{
+    margin-top: 10px;
+    margin-right: 10px;
+    border: solid 2px rgb(59, 59, 59);
+    border-radius: 20px;
+}
+
+.dados .bio p{
+    margin: 0px;
+    text-indent: 20px;
+    
+}
+
+.conteudo{
+    border-left: solid 2px #ff5100;
+    border-radius: 20px;
+}
+
+.bio .title, .bio-text .title{
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    text-decoration: underline #ff5100 4px;
+}
+
+.bio .texto, .bio-text .texto{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14.7px;
+    text-align: justify;
+}
+
+.bio-infos{
+    min-height: calc(100vh - 424px);
+    display: flex;
+    justify-content: center;
+}
+
+.grafico-github{
+    padding: 8px 0px;
+    width: 100%; 
+    max-width:670px; 
+    height: 215px; 
+    overflow: hidden; 
+}
+
+.grafico-github img{
+    object-fit: cover; 
+    object-position: 0px -10px; /* Move a imagem pra cima */
+    width: 100%; 
+}
+
+.centro a{
+    transition: 2s;
+}
+
+.centro a:hover{
+    color: white;
+    transition: 0.2s;
+}

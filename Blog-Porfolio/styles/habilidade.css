@@ -1,0 +1,63 @@
+.container-central{
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 119px);
+    text-align: center;
+    border: solid 2px rgb(59, 59, 59);
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.habilidades{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+}
+.conteudo .title{
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: underline #ff5100 4px;
+}
+.card-habilidade{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px #ff5100;
+    background-color: #1a1a1a;
+    color: #ff5100;
+    border-top-left-radius: 26px;
+    border-bottom: solid 3px #ff5100;
+    padding: 10px 40px;
+    margin: 10px;
+    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50px;
+    height: 110px;
+    transition: 0.3s;
+}
+
+.card-habilidade:hover{
+    transform: scale(1.10);
+    transition: 0.3s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-habilidade .linguagem{
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.descricao-habilidades{
+    font-size: 18px;
+    color: #ff5100;
+    font-weight: bold;
+}

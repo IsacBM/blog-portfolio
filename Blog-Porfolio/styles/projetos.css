@@ -1,0 +1,123 @@
+.container-central{
+    border: 2px solid rgb(59, 59, 59); /* Borda laranja */
+    text-align: center;
+    border: solid 2px rgb(59, 59, 59);
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.descricao-habilidades{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff5100;
+    margin: 10px 0;
+}
+
+.conteudo-projetos {
+    overflow-y: auto;
+    height: calc(100vh - 119px);
+    /* padding-right: 10px; */
+    border-left: solid 2px #ff5100;
+    border-radius: 20px;
+}
+
+.conteudo-projetos .title {
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: underline #ff5100 4px;
+    margin: 10px 0; /* Margem superior e inferior */
+}
+
+.conteudo-projetos .descricao {
+    font-size: 18px;
+    color: #ff5100;
+    margin: 10px 0; /* Margem superior e inferior */
+}
+
+.projetos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    margin: 18px;
+    gap: 20px; /* Espaçamento entre os cards */
+}
+
+.card_projeto{
+    transition: 0.3s; /* Transição suave */
+}
+
+.card_projeto img {
+    width: 100%; /* Responsivo dentro da coluna */
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card_projeto:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    transition: 0.3s; /* Transição suave */
+}
+
+.card_projeto {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card_overlay {
+    position: absolute;
+    top: -35px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.4); /* leve escurecida */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.card_overlay h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card_overlay a {
+    background-color: #ff5100;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.card_overlay a:hover {
+    background-color: #e14a00;
+}
+
+.botao-tecnologias{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.botao-tecnologias .linguagens{
+    color: #ff5100;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.projeto-4 img{
+    width: 800px;
+}
